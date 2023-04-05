@@ -43,7 +43,9 @@ class HomeFragment : Fragment() {
                     findNavController()
                         .navigate(R.id.action_rootNoOp_to_innerNoOp)
                 }
-                else -> {
+                R.id.innerNoOp -> {
+                    findNavController()
+                        .navigate(R.id.action_innerNoOp_self)
                 }
             }
         }
